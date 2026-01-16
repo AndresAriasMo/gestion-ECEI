@@ -6,6 +6,10 @@ import Layout from "@/components/layout";
 import Dashboard from "@/pages/dashboard";
 import DocumentsPage from "@/pages/documents";
 import VacanciesPage from "@/pages/vacancies";
+import CompaniesPage from "@/pages/companies";
+import EvaluationsPage from "@/pages/evaluations";
+import CalendarPage from "@/pages/calendar";
+import TicketsPage from "@/pages/tickets";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -15,7 +19,11 @@ function Router() {
         <Route path="/" component={Dashboard} />
         <Route path="/documents" component={DocumentsPage} />
         <Route path="/vacancies" component={VacanciesPage} />
-        <Route path="/review-docs" component={DocumentsPage} /> {/* Reuse for prototype */}
+        <Route path="/review-docs" component={DocumentsPage} />
+        <Route path="/companies" component={CompaniesPage} />
+        <Route path="/evaluations" component={EvaluationsPage} />
+        <Route path="/calendar" component={CalendarPage} />
+        <Route path="/tickets" component={TicketsPage} />
         <Route component={NotFound} />
       </Switch>
     </Layout>
